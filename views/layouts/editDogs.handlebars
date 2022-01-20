@@ -1,0 +1,42 @@
+    <form action="/editarcachorro" method="post">
+
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title mx-auto">
+                            <img class="rounded" src="https://cdn-icons-png.flaticon.com/512/194/194279.png"
+                                width="65rem">
+                        </div>
+                        <div class="position-absolute fixed-top p-2">
+                            <button type="button" class="close" data-dismiss="modal"
+                                aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="modal-body" id="datepicker">
+                        <div class="form-group ml-2 mr-2 py-4">
+                            <input type="hidden" name="id" value="{{editdogs.id}}">
+                            <label for="recipient-name1"
+                                class="col-form-label font-weight-normal">Nome do cão</label>
+                            <input  placeholder="Insira o nome do cachorro" value="{{editdogs.name}}" name="nameDog" type="text" class="form-control" id="recipient-name1 ">
+                            <label for="recipient-name2"
+                            class="col-form-label font-weight-normal">Raça</label>
+                            <input placeholder="Insira a raça do cachorro" value="{{editdogs.raça}}" name="raça" type="text" class="form-control" id="recipient-name2">
+                        </div>
+                    </div>
+
+                    <button type="submit"
+                        class="btn btn-info mx-auto w-50 mb-4">Editar cachorro</button>
+                    <div class="modal-footer">
+                        <small class="text-muted text-center px-4 pb-3 rem mx-auto">
+        
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>

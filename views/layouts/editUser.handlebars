@@ -1,0 +1,39 @@
+<form action="/editarusuario" method="POST">
+
+
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title mx-auto" id="exampleModalLongTitle">
+                            <img class="rounded" src="https://icons-for-free.com/iconfiles/png/512/neutral+user-131964784832104677.png"
+                                width="65rem">
+                        </div>
+                        <div class="position-absolute fixed-top p-2">
+                            <button type="button" class="close" data-dismiss="modal"
+                                aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                    <input type="hidden" name="id" value="{{edituser.id}}">
+                    <div class="modal-body" id="datepicker">
+                        <div class="form-group ml-2 mr-2 py-4">
+                            <label for="recipient-name1"
+                                class="col-form-label font-weight-normal">Nome do usuário</label>
+                            <input value="{{edituser.name}}" name="nameUser" type="text" class="form-control" id="recipient-name1">
+                            <label for="recipient-name2"
+                            class="col-form-label font-weight-normal">Senha</label>
+                            <input value="{{edituser.password}}" name="password" type="text" class="form-control" id="recipient-name2">
+                        </div>
+                    </div>
+                    <button type="submit"
+                        class="btn btn-info mx-auto w-50 mb-4">Editar usuário</button>
+                    <div class="modal-footer">
+                        <small class="text-muted text-center px-4 pb-3 rem mx-auto">
+        
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
